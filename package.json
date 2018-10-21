@@ -1,0 +1,27 @@
+{
+  "name": "herculex-appx-plugin-api",
+  "version": "0.1.0",
+  "description": "herculex-api-middleware for appx",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "lintf": "eslint src --fix"
+  },
+  "prepublish": "npm run build && npm version patch",
+  "author": "candy.zhengxq@gmail.com",
+  "license": "ISC",
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "babel-eslint": "~7.1.1",
+    "eslint": "~3.5.0",
+    "eslint-config-standard": "~6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "normalizr": "^3.3.0"
+  }
+}
